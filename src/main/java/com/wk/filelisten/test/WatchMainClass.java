@@ -12,9 +12,9 @@ import java.util.concurrent.TimeUnit;
 public class WatchMainClass {
     private static void FileListenterClass() throws Exception{
         // 监控目录
-        String rootDir = "D:\\mysqlLog";
+        String rootDir = "D:\\temp";
         // 轮询间隔 1 秒
-        long interval = TimeUnit.SECONDS.toMillis(10);
+        long interval = TimeUnit.SECONDS.toMillis(1);
         // 创建一个文件观察器用于处理文件的格式
         FileAlterationObserver observer = new FileAlterationObserver(rootDir);
         //设置文件变化监听器

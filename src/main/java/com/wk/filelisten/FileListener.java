@@ -20,7 +20,7 @@ public class FileListener extends FileAlterationListenerAdaptor {
     public void onFileCreate(File file) {
 
         System.out.println("create file:" + file.getAbsolutePath());
-        String message = Utils.FileMove(file,"D://test")?"移动成功":"移动失败";
+        String message = Utils.FileMove(file,new File("D://test"))?"移动成功":"移动失败";
         System.out.println(message);
     }
 
